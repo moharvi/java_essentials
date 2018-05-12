@@ -6,8 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class FirstSelenium {
 
     public static void main(String[] args) {
-    	System.setProperty("webdriver.chrome.driver","/TestAutomation/drivers");
-        WebDriver driver = new ChromeDriver();
+    	System.setProperty("webdriver.chrome.driver", "/TestAutomation/drivers/chromedriver");
+    	WebDriver driver = new ChromeDriver();
         String expectedTitle = "Welcome: Mercury Tours";
         driver.get("http://newtours.demoaut.com");
         String actualTitle = driver.getTitle();
